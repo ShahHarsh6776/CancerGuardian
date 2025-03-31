@@ -1,0 +1,54 @@
+Website Structure: Cancer Detection and AI-Based Suggestion Platform
+Overview
+Purpose: A website focused on detecting Skin Cancer, Throat Cancer, and Breast Cancer using AI tools and providing personalized health suggestions.
+Technologies:
+Database: Supabase (for user data, test results, etc.)
+AI: Gemini API (for chatbot and question generation)
+Targeted Cancers: Skin Cancer, Throat Cancer, Breast Cancer
+Website Flow and Sections
+Starting Page
+Login/Register:
+Login: For existing users with registered credentials.
+Register:
+New users create an account.
+Collects basic information: Age, Gender, etc., for cancer risk classification.
+Purpose: Secure user access and personalize experience.
+Main Sections
+Dashboard:
+If No Prior Tests:
+Displays: "No data found yet!" with additional notes.
+AI-based recommendations for staying healthy (based on age, gender).
+If Tests Taken:
+Shows previous test results.
+AI-based recovery tips tailored to the user’s condition.
+Cancer Test:
+Basic Test (Q&A-Based):
+Uses Gemini API for dynamic question generation.
+Flow:
+Fixed starting question: "Which part of your body is affected?"
+AI generates 7-10 multiple-choice questions based on previous answers.
+Final prediction: Likelihood of cancer (Skin, Throat, or Breast).
+Purpose: Simple, accessible screening via Q&A.
+Advanced Test (Image-Based):
+Uses pre-trained models (APIs) for Skin, Throat, and Breast Cancer detection.
+Flow:
+User selects the affected body part.
+Gemini API asks 2-3 follow-up multiple-choice questions.
+AI decides which model API to call (Skin, Throat, or Breast).
+User uploads an image.
+Model returns: Cancer (Yes/No) + Prediction Percentage.
+Gemini API provides a detailed description based on the result.
+Purpose: Accurate detection using image analysis.
+Nearby Hospitals:
+Features:
+Search functionality for hospitals near the user’s location.
+Displays hospital details and contact information.
+Purpose: Connect users to medical support.
+Profile:
+Displays user details (e.g., age, gender, test history).
+Editable personal information.
+Purpose: User account management.
+Common Feature: AI Chatbot
+Powered by Gemini API.
+Scope: Provides cancer-specific advice and answers user queries.
+Available across all sections.
