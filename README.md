@@ -3,6 +3,7 @@
 CancerGuardian is an advanced medical image analysis system that uses deep learning to detect various types of cancer from medical images. The system currently supports detection of:
 - Breast Cancer
 - Throat Cancer
+- Skin Cancer
 
 ## Features
 
